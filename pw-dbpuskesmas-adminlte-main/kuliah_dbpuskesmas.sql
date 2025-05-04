@@ -67,11 +67,11 @@ CREATE TABLE `paramedik` (
 --
 
 INSERT INTO `paramedik` (`id`, `nama`, `gender`, `tmp_lahir`, `tgl_lahir`, `kategori`, `telpon`, `alamat`, `unit_kerja_id`) VALUES
-(1, 'Dr. Aditya Nugraha', 'L', 'Jakarta', '1985-05-20', 'dokter', '081234567890', 'Jl. Sudirman No. 15', 1),
-(2, 'Siti Marlina', 'P', 'Depok', '1990-08-12', 'perawat', '081345678901', 'Jl. Kartini No. 8', 2),
-(3, 'Budi Rahmat', 'L', 'Bogor', '1988-03-05', 'apoteker', '081456789012', 'Jl. Ahmad Yani No. 20', 5),
-(4, 'Dewi Kusuma', 'P', 'Bandung', '1992-11-25', 'perawat', '081567890123', 'Jl. Pemuda No. 30', 2),
-(5, 'Dr. Intan Permatasari', 'P', 'Bekasi', '1987-02-15', 'dokter', '081678901234', 'Jl. Melati No. 11', 1);
+(1, 'Dr. ji-chang wook', 'L', 'Jakarta', '1997-07-15', 'dokter', '083152121750', 'Jl. Padjajaran No. 10', 1),
+(2, 'Iah Sopiyah', 'P', 'Bogor', '2000-08-11', 'perawat', '081528903401', 'Jl. Mayor oking No. 8', 2),
+(3, 'Soekarno', 'L', 'Bogor', '1945-02-17', 'apoteker', '081256789567', 'Jl. Ahmad Yani No. 20', 5),
+(4, 'Indra', 'L', 'Bandung', '1992-11-25', 'perawat', '081167124123', 'Jl. Buah Batu No. 30', 2),
+(5, 'Dr. Surya', 'L', 'Bekasi', '1988-02-15', 'dokter', '081778301234', 'Jl. Melati No. 11', 1);
 
 -- --------------------------------------------------------
 
@@ -96,11 +96,11 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`id`, `kode`, `nama`, `tmp_lahir`, `tgl_lahir`, `gender`, `email`, `alamat`, `kelurahan_id`) VALUES
-(1, 'P001', 'Andi Saputra', 'Depok', '1995-04-12', 'L', 'andi.saputra@gmail.com', 'Jl. Merpati No. 10', 1),
-(2, 'P002', 'Siti Rahma', 'Jakarta', '1998-09-23', 'P', 'siti.rahma@yahoo.com', 'Jl. Anggrek Raya No. 5', 2),
-(3, 'P003', 'Budi Santoso', 'Bogor', '1990-01-15', 'L', 'budi.santoso@outlook.com', 'Jl. Kenanga No. 20', 3),
-(4, 'P004', 'Dewi Lestari', 'Bandung', '1992-07-08', 'P', 'dewi.lestari@gmail.com', 'Jl. Melati Putih No. 12', 4),
-(5, 'P005', 'Rizky Pratama', 'Bekasi', '1997-11-30', 'L', 'rizky.pratama@hotmail.com', 'Jl. Dahlia Indah No. 7', 5);
+(1, 'P001', 'Marklee', 'Depok', '1999-08-03', 'L', 'on.y0urmark@gmail.com', 'Jl. Toronto No. 10', 1),
+(2, 'P002', 'Mawar', 'Jakarta', '2001-01-01', 'P', 'maw.ar@yahoo.com', 'Jl. Anggrek Raya No. 5', 2),
+(3, 'P003', 'Lee Jeno', 'Bogor', '2000-05-15', 'L', 'jeno.lee@gmail.com', 'Jl. Panduraya No. 20', 3),
+(4, 'P004', 'Haechan', 'Bandung', '2003-07-08', 'P', 'haechanahce.ah.ah@gmail.com', 'Jl. Jeju No. 12', 4),
+(5, 'P005', 'Johnny Suh', 'Chicago', '1997-10-10', 'L', 'suh.johnny@gmail.com', 'Jl. Chicago No. 7', 5);
 
 -- --------------------------------------------------------
 
@@ -125,9 +125,9 @@ CREATE TABLE `periksa` (
 
 INSERT INTO `periksa` (`id`, `tanggal`, `berat`, `tinggi`, `tensi`, `keterangan`, `pasien_id`, `paramedik_id`) VALUES
 (1, '2025-04-26', 70.5, 170, '120/80', 'Pemeriksaan rutin, pasien dalam kondisi sehat.', 1, 1),
-(2, '2025-04-25', 55, 160, '130/85', 'Pasien mengeluh sakit kepala ringan.', 2, 2),
-(3, '2025-04-24', 80, 175, '140/90', 'Pasien dalam kondisi tekanan darah tinggi, perlu kontrol lebih lanjut.', 3, 3),
-(4, '2025-04-26', 64, 178, '100/80', 'Dummy 1', 1, 1);
+(2, '2025-04-25', 55, 160, '150/90', 'Pasien dalam kondisi tekanan darah tinggi, perlu kontrol lebih lanjut.', 2, 2),
+(3, '2025-04-24', 80, 175, '130/90', 'Pasien dalam kondisi tekanan darah rendah, sering pusing.', 3, 3),
+(4, '2025-04-26', 64, 178, '100/80', 'Pasien sering mual karena asam lambung 1', 1, 1);
 
 -- --------------------------------------------------------
 
